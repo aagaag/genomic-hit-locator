@@ -320,7 +320,8 @@ The plot uses a local annotation table to place genes along chromosomes.
 The backend looks for the annotation file in this order:
 
 1. `GENOMIC_HIT_LOCATOR_ANNOTATION_PATH`
-2. `/home/aag/Neuropathology - Manuscripts/TrevisanWang2024/Data/ScreenResults/PrP_genes_and_NT_ordered_AguzziLab.xlsx`
+2. `/home/aag/crispr_data/shared/annotations/PrP_genes_and_NT_ordered_AguzziLab.xlsx`
+3. `/home/aag/Neuropathology - Manuscripts/TrevisanWang2024/Data/ScreenResults/PrP_genes_and_NT_ordered_AguzziLab.xlsx`
 
 ### Accepted annotation sources
 
@@ -710,7 +711,7 @@ The app currently reads these variables:
 | `GENOMIC_HIT_LOCATOR_SUBTITLE` | subtitle shown on the landing page | `Interactive genomic localization for screen-wide effect sizes and focused hit overlays.` |
 | `GENOMIC_HIT_LOCATOR_PUBLIC_BASE_URL` | URL used by the "Open standalone app" button | `https://genomic-hit-locator.isab.science` |
 | `GENOMIC_HIT_LOCATOR_FRAME_ANCESTORS` | CSP `frame-ancestors` policy value | `'self' https://isab.science https://www.isab.science` |
-| `GENOMIC_HIT_LOCATOR_ANNOTATION_PATH` | preferred annotation file path | empty, then falls back to the hard-coded manuscript path |
+| `GENOMIC_HIT_LOCATOR_ANNOTATION_PATH` | preferred annotation file path | empty, then falls back to the shared CRISPR annotation workbook and then the legacy manuscript path |
 | `GENOMIC_HIT_LOCATOR_DEFAULT_ALL_GENES` | override path for the default genome-wide sample | `/home/aag/genomic-hit-locator/sample-data/Primary_screen_filtered_results.xlsx` |
 | `GENOMIC_HIT_LOCATOR_DEFAULT_SECONDARY` | override path for the default secondary sample | `/home/aag/genomic-hit-locator/sample-data/Secondary screen.xlsx` |
 

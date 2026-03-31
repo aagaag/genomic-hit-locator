@@ -77,6 +77,7 @@ POSITION_ALIASES = ("Start_Position", "Start position", "StartPosition", "Start"
 
 ANNOTATION_CANDIDATES = [
     os.getenv("GENOMIC_HIT_LOCATOR_ANNOTATION_PATH", "").strip(),
+    "/home/aag/crispr_data/shared/annotations/PrP_genes_and_NT_ordered_AguzziLab.xlsx",
     "/home/aag/Neuropathology - Manuscripts/TrevisanWang2024/Data/ScreenResults/PrP_genes_and_NT_ordered_AguzziLab.xlsx",
 ]
 DEFAULT_SAMPLE_DIR = APP_ROOT / "sample-data"
