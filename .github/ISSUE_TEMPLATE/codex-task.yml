@@ -1,0 +1,52 @@
+name: Codex task
+description: A scoped task intended for Codex or human/Codex collaboration.
+title: "[Codex]: "
+labels: ["codex", "triage"]
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What should be true when this is complete?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Link relevant docs, hostnames, incidents, or prior issues.
+    validations:
+      required: true
+  - type: dropdown
+    id: risk
+    attributes:
+      label: Production risk
+      options: [Low, Medium, High, Critical]
+    validations:
+      required: true
+  - type: dropdown
+    id: readiness
+    attributes:
+      label: Codex readiness
+      options: [Needs triage, Ready local, Ready remote, Human first, Blocked]
+    validations:
+      required: true
+  - type: textarea
+    id: safety
+    attributes:
+      label: Safety constraints
+      value: |
+        - Do not deploy unless explicitly approved in this issue.
+        - Do not commit private scientific data, local private paths, secrets, or raw Codex transcripts.
+        - Keep README changes user-facing accurate because `/readme` renders it.
+        - Coordinate hostname assumptions with `aagaag/isab-website`.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      value: |
+        - [ ] ...
+    validations:
+      required: true

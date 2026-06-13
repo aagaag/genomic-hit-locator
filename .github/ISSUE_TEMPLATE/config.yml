@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: ISAB control-plane documentation
+    url: https://github.com/aagaag/isab-control-plane
+    about: Start here for repo ownership, Codex process, and cross-repo architecture.
